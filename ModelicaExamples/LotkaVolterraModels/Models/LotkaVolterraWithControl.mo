@@ -1,4 +1,4 @@
-within ModelicaExamples.LotkaVolterraModels;
+within ModelicaExamples.LotkaVolterraModels.Models;
 model LotkaVolterraWithControl
 
   extends BaseClasses.PartialLotkaVolterra;

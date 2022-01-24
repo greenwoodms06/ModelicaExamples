@@ -1,7 +1,7 @@
 within ModelicaExamples.LotkaVolterraModels.Examples;
 model Test_LotkaVolterraWithControl
     extends Modelica.Icons.Example;
-  LotkaVolterraWithControl simulator(
+  Models.LotkaVolterraWithControl simulator(
     alpha=0.5,
     beta=0.025,
     gamma=0.5,

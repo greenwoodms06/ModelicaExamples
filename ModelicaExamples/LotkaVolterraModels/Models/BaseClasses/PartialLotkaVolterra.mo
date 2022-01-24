@@ -1,4 +1,4 @@
-within ModelicaExamples.LotkaVolterraModels.BaseClasses;
+within ModelicaExamples.LotkaVolterraModels.Models.BaseClasses;
 partial model PartialLotkaVolterra
 
   parameter Real alpha = 1.5 "Growth rate of prey";

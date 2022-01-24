@@ -2,7 +2,7 @@ within ModelicaExamples.LotkaVolterraModels.Examples;
 model Test_LotkaVolterra
   extends Modelica.Icons.Example;
 
-  LotkaVolterra simulator
+  Models.LotkaVolterra simulator
     annotation (Placement(transformation(extent={{-10,-10},{10,10}})));
   annotation (
     Icon(coordinateSystem(preserveAspectRatio=false)),
