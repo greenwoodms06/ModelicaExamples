@@ -12,8 +12,8 @@ model Test_LotkaVolterraWithControl
   Modelica.Blocks.Sources.Constant const(k=0)
     annotation (Placement(transformation(extent={{-60,-10},{-40,10}})));
 equation
-  connect(simulator.u, const.y)
-    annotation (Line(points={{-10,0},{-39,0}}, color={0,0,127}));
+  connect(simulator.u_y, const.y) annotation (Line(points={{-10,-4},{-24,-4},{
+          -24,0},{-39,0}}, color={0,0,127}));
   annotation (
     Icon(coordinateSystem(preserveAspectRatio=false)),
     Diagram(coordinateSystem(preserveAspectRatio=false)),

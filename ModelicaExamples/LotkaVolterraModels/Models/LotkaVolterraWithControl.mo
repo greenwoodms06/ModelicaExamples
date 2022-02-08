@@ -3,12 +3,13 @@ model LotkaVolterraWithControl
 
   extends BaseClasses.PartialLotkaVolterra;
 
-  Modelica.Blocks.Interfaces.RealInput u
-    annotation (Placement(transformation(extent={{-140,-20},{-100,20}})));
-
+  Modelica.Blocks.Interfaces.RealInput u_y
+    annotation (Placement(transformation(extent={{-140,-60},{-100,-20}})));
+  Modelica.Blocks.Interfaces.RealInput u_x
+    annotation (Placement(transformation(extent={{-140,20},{-100,60}})));
 equation
-  der(x) = alpha*x - beta*x*y;
-  der(y) = -gamma*y + delta*x*y + u;
+  der(x) = alpha*x - beta*x*y + u_x;
+  der(y) =-gamma*y + delta*x*y + u_y;
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
         coordinateSystem(preserveAspectRatio=false)),
     Documentation(info="<html>
